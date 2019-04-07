@@ -1,9 +1,0 @@
-Non-testable:
-1. This field is never read.  The field is public or protected, so perhaps it is intended to be used with classes not seen as part of the analysis. If not, consider removing it from the class.
-2. No writes were seen to this public/protected field.  All reads of it will return the default value. Check for errors (should it have been initialized?), or remove it if it is useless.
-3. This class is an inner class, but does not use its embedded reference to the object which created it.  This reference makes the instances of the class larger, and may keep the reference to 
-        the creator object alive longer than necessary.  If possible, the class should be made static.
-4. This field is never read. Consider removing it from the class.
-
-Testable:
-No errors.
