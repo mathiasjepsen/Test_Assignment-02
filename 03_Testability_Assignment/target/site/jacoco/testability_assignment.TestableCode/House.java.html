@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>House.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">03_Testability_Assignment</a> &gt; <a href="index.source.html" class="el_package">testability_assignment.TestableCode</a> &gt; <span class="el_source">House.java</span></div><h1>House.java</h1><pre class="source lang-java linenums">package testability_assignment.TestableCode;
+
+/**
+ *
+ * @author mathiasjepsen
+ */
+public class House {
+    private final double sqm;
+    private int inhabitants;
+
+<span class="fc" id="L11">    public House(double sqm, int inhabitants) {</span>
+<span class="fc" id="L12">        this.sqm = sqm;</span>
+<span class="fc" id="L13">        this.inhabitants = inhabitants;</span>
+<span class="fc" id="L14">    }</span>
+    
+    public int calculateRent() {
+<span class="fc bfc" id="L17" title="All 2 branches covered.">        if (this.sqm &lt;= 0) return -1;</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (this.sqm &gt;= 100) {</span>
+<span class="fc" id="L19">            return 1000;</span>
+        } else {
+<span class="fc" id="L21">            return 500;</span>
+        }
+    }
+
+    public int getInhabitants() {
+<span class="nc" id="L26">        return inhabitants;</span>
+    }
+
+    public double getSqm() {
+<span class="nc" id="L30">        return sqm;</span>
+    }
+
+    public void setInhabitants(int inhabitants) {
+<span class="nc" id="L34">        this.inhabitants = inhabitants;</span>
+<span class="nc" id="L35">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+03_Testability_Assignment,testability_assignment.TestableCode,Animal,60,22,0,2,10,7,6,3,6,2
+03_Testability_Assignment,testability_assignment.TestableCode,House,10,25,0,4,4,8,3,4,3,2
+03_Testability_Assignment,testability_assignment,NonTestableCode,9,0,0,0,5,0,2,0,2,0
+03_Testability_Assignment,testability_assignment,NonTestableCode.ANIMAL,48,0,0,0,12,0,4,0,4,0
+03_Testability_Assignment,testability_assignment,NonTestableCode.House,15,0,0,0,5,0,2,0,2,0
